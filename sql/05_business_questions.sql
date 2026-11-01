@@ -1,6 +1,6 @@
 /*
 ================================================================================
-END-TO-END RETAIL RETENTION ANALYSIS - BUSINESS QUESTIONS
+RETAIL RETENTION ANALYSIS - BUSINESS QUESTIONS
 ================================================================================
 */
 

@@ -1,6 +1,6 @@
 # Case Study: Where Does the Revenue Come From, and How Much of It Is at Risk?
 
-**An end-to-end retention analysis of 1M+ transactions from a UK online retailer**
+**A retention analysis of 1M+ transactions from a UK online retailer**
 SQL Server · Python · Power BI
 
 > **The short version:** 72% of customers reorder and generate 97% of revenue, but half of all identified customers (51%) have gone quiet for 90+ days, holding £3.30M of past spend. The cheapest place to act is the gap between a customer's first and second order: the median is 57 days, and only 31% of repeat customers come back within 30.
