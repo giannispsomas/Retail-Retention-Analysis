@@ -44,6 +44,18 @@ A page-by-page walkthrough with the measures behind each visual is in [Report_Gu
 2. **Python:** RFM segmentation with K-Means clustering, cohort retention, churn prediction, statistical tests, a forward-looking churn model, a revenue forecast and a lifetime value model ([python/](python/)).
 3. **Power BI:** a six-page interactive dashboard on top of the SQL views and Python outputs ([power_bi/](power_bi/)).
 
+## Data Model and Metrics
+
+![Star schema diagram](docs/star_schema_diagram.png)
+
+- **Data model:** a Kimball star schema with one fact table (`fact.sales`) and four dimensions (customer, product, date, country), plus reporting views in the `rpt` schema. Details in [star_schema.md](docs/star_schema.md).
+- **Table grain:** one row in `fact.sales` is one invoice line item, so order-level counts use `COUNT(DISTINCT invoice)`.
+- **Measures:** 21 DAX measures, among them Total Revenue, Total Orders, Total Customers, AOV, Repeat Rate %, Repeat Revenue Share %, Churn Rate % and Revenue at Risk. Each is listed in [DAX_Measures.md](docs/DAX_Measures.md).
+- **Headline metrics:** the repeat-customer share of revenue (97%) and revenue at risk (£3.30M from customers inactive for 90+ days).
+- **Data quality:** the raw table is never changed. The cleaning removed 11,812 exact duplicate rows, 4,275 rows with no description and 2,414 junk or placeholder rows, and flagged real events such as guest checkouts (13.1% of revenue) instead of deleting them. Details in [data_cleaning.md](docs/data_cleaning.md).
+- **Data integrity:** revenue reconciles to £19.64M between the cleaned table and the star schema, and a reconciliation query ties gross sales to net revenue.
+- **Seasonality and growth:** September to November delivers 29% of January to November revenue in both 2010 and 2011, and December 2011 is a partial month.
+
 ## Repository Structure
 
 ```
