@@ -1,43 +1,78 @@
 {
-  "name": "Retail Retention",
+  "name": "Retail E-commerce",
   "dataColors": [
-    "#1F3864",
-    "#C55A11",
-    "#548235",
+    "#0F4C5C",
+    "#E36414",
+    "#2A9D8F",
+    "#9A031E",
+    "#FB8B24",
+    "#5F0F40",
     "#7F7F7F",
-    "#2E75B6",
-    "#BF9000",
-    "#7030A0",
-    "#00B0F0"
+    "#8AB0AB"
   ],
   "background": "#FFFFFF",
   "foreground": "#262626",
-  "tableAccent": "#1F3864",
+  "tableAccent": "#0F4C5C",
+  "good": "#2A9D8F",
+  "neutral": "#FB8B24",
+  "bad": "#9A031E",
+  "maximum": "#0F4C5C",
+  "center": "#F1E3D3",
+  "minimum": "#F5C9B8",
   "textClasses": {
     "title": {
-      "fontSize": 13,
       "fontFace": "Segoe UI Semibold",
-      "color": "#1F3864"
+      "fontSize": 12,
+      "color": "#0F4C5C"
     },
     "label": {
-      "fontSize": 11,
       "fontFace": "Segoe UI",
-      "color": "#404040"
+      "fontSize": 10,
+      "color": "#595959"
     },
     "callout": {
-      "fontSize": 26,
       "fontFace": "Segoe UI Semibold",
-      "color": "#1F3864"
+      "fontSize": 28,
+      "color": "#0F4C5C"
     },
     "header": {
-      "fontSize": 12,
       "fontFace": "Segoe UI Semibold",
-      "color": "#1F3864"
+      "fontSize": 11,
+      "color": "#0F4C5C"
     }
   },
   "visualStyles": {
     "*": {
       "*": {
+        "title": [
+          {
+            "show": true,
+            "alignment": "left",
+            "fontSize": 12,
+            "bold": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0F4C5C"
+              }
+            }
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "radius": 8,
+            "color": {
+              "solid": {
+                "color": "#D9C9B4"
+              }
+            }
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
         "background": [
           {
             "show": true,
@@ -49,27 +84,47 @@
             "transparency": 0
           }
         ],
-        "border": [
+        "categoryAxis": [
           {
-            "show": true,
-            "color": {
+            "labelColor": {
               "solid": {
-                "color": "#D9D9D9"
+                "color": "#595959"
               }
             },
-            "radius": 8
+            "fontSize": 10,
+            "showAxisTitle": false
           }
         ],
-        "title": [
+        "valueAxis": [
           {
-            "show": true,
-            "fontColor": {
+            "labelColor": {
               "solid": {
-                "color": "#1F3864"
+                "color": "#595959"
               }
             },
-            "fontSize": 12,
-            "bold": true
+            "fontSize": 10,
+            "showAxisTitle": false
+          }
+        ],
+        "gridlines": [
+          {
+            "color": {
+              "solid": {
+                "color": "#ECEFF4"
+              }
+            },
+            "strokeWidth": 1
+          }
+        ],
+        "legend": [
+          {
+            "position": "Top",
+            "fontSize": 10,
+            "labelColor": {
+              "solid": {
+                "color": "#595959"
+              }
+            }
           }
         ]
       }
@@ -80,7 +135,7 @@
           {
             "color": {
               "solid": {
-                "color": "#F2F4F8"
+                "color": "#EADFCF"
               }
             },
             "transparency": 0
