@@ -4,7 +4,7 @@ An analysis of about 1M transactions from a UK online retailer (December 2009 to
 
 **Tools:** SQL Server (T-SQL) · Python (Jupyter) · Power BI (DAX)
 
-**Start here:** [Video walkthrough (3 min)](https://youtu.be/I_UvFsbfLRI) · [Case study](Case_Study.md) · [Dashboard report (PDF)](power_bi/Retention_Analysis.pdf) · [Executive summary (PDF)](Executive_Summary.pdf) · [Slides (PPTX)](Executive_Summary_Slides.pptx)
+**Start here:** [Video walkthrough (3 min)](https://www.youtube.com/watch?v=l1wmeJnVABg) · [Case study](Case_Study.md) · [Dashboard report (PDF)](power_bi/Retention_Analysis.pdf) · [Executive summary (PDF)](Executive_Summary.pdf) · [Slides (PPTX)](Executive_Summary_Slides.pptx)
 
 ## Project Background
 
